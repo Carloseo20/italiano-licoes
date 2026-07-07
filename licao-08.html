@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Italiano Ogni Giorno — Lição 8: Le professioni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--v:#2D6A4F;--vc:#52B788;--cr:#FAF7F2;--tc:#C1440E;--ts:#F4A97E;--do:#D4A017;--ce:#1C1C1E;--cm:#6B6B6B;--br:#FFFFFF;--sh:rgba(44,44,44,.10)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--cr);font-family:'Inter',sans-serif;color:var(--ce);min-height:100vh}
+header{background:var(--v);padding:16px 20px 12px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px var(--sh)}
+header h1{font-family:'Playfair Display',serif;color:#FAF7F2;font-size:1.2rem}
+header em{font-family:'Playfair Display',serif;font-style:italic;color:#F4A97E;font-size:.8rem}
+.tb{background:var(--tc);color:#fff;font-size:.76rem;font-weight:600;padding:4px 11px;border-radius:20px}
+nav{display:flex;background:var(--br);border-bottom:2px solid #E8E3DB;overflow-x:auto;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+.nb{flex:1;min-width:78px;padding:10px 6px 8px;background:none;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-size:.67rem;font-weight:500;color:var(--cm);letter-spacing:.04em;text-transform:uppercase;border-bottom:3px solid transparent;transition:all .2s;display:flex;flex-direction:column;align-items:center;gap:3px}
+.nb .ic{font-size:.98rem}.nb.active{color:var(--v);border-bottom-color:var(--v);background:#F0FAF4}
+main{padding:18px 15px 80px;max-width:600px;margin:0 auto}
+.sec{display:none}.sec.active{display:block}
+.rh{background:linear-gradient(135deg,var(--v),#1A4731);border-radius:13px;padding:20px;margin-bottom:14px;color:#fff;position:relative;overflow:hidden}
+.rh::after{content:'💼';position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:2.8rem;opacity:.2}
+.rh h2{font-family:'Playfair Display',serif;font-size:1.2rem;margin-bottom:3px}
+.rh p{font-size:.78rem;opacity:.85}
+.lb{display:inline-block;background:var(--do);color:#fff;font-size:.67rem;font-weight:700;padding:2px 9px;border-radius:20px;letter-spacing:.06em;margin-bottom:7px}
+.bloco{display:flex;gap:12px;align-items:flex-start;padding:13px 15px;background:var(--br);border-radius:11px;margin-bottom:8px;border:1px solid #EDE8E0;box-shadow:0 1px 5px var(--sh)}
+.bi{width:40px;height:40px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.bi.v{background:#E8F5EE}.bi.t{background:#FEF0E8}.bi.d{background:#FDF6E3}
+.bt{font-size:.67rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--v);background:#E8F5EE;padding:2px 7px;border-radius:9px;margin-bottom:3px;display:inline-block}
+.bloco h3{font-size:.88rem;font-weight:600;margin-bottom:3px}.bloco p{font-size:.75rem;color:var(--cm);line-height:1.5}
+.vocab-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:4px}
+.vocab-card{background:var(--br);border:1px solid #EDE8E0;border-radius:10px;padding:11px 10px;transition:all .2s;box-shadow:0 1px 4px var(--sh);cursor:pointer}
+.vocab-card:hover{transform:translateY(-2px)}
+.vocab-it{font-family:'Playfair Display',serif;font-size:.97rem;color:var(--v);margin-bottom:1px}
+.vocab-pt{font-size:.74rem;color:var(--cm)}
+.vocab-ex{font-size:.69rem;color:var(--tc);font-style:italic;margin-top:5px;display:none;line-height:1.4}
+.vocab-card.revelado .vocab-ex{display:block}.vocab-card.revelado{border-color:var(--vc);background:#F5FBF7}
+.vocab-cat{font-size:.62rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--do);margin-bottom:6px;margin-top:4px}
+.vocab-actions{display:flex;gap:4px;margin-top:6px}
+.btn-audio{background:none;border:none;cursor:pointer;font-size:.92rem;padding:2px 4px;border-radius:5px;transition:all .15s;display:inline-flex;align-items:center}
+.btn-audio:hover{background:#E8F5EE;transform:scale(1.15)}
+.btn-audio.playing{animation:pulse .6s infinite alternate}
+@keyframes pulse{from{opacity:1}to{opacity:.35}}
+.lc{background:var(--br);border-radius:13px;padding:18px;border:1px solid #EDE8E0;box-shadow:0 2px 9px var(--sh);margin-bottom:13px}
+.li{font-family:'Playfair Display',serif;font-size:.94rem;line-height:1.85;color:var(--ce);margin-bottom:11px;padding-bottom:11px;border-bottom:1px dashed #DDD}
+.lp{font-size:.79rem;color:var(--cm);line-height:1.7;display:none;margin-top:9px}
+.lp.visivel{display:block}
+.btn-t{background:none;border:1.5px solid var(--v);color:var(--v);padding:6px 14px;border-radius:20px;font-size:.75rem;font-weight:600;cursor:pointer;transition:all .2s}
+.btn-t:hover{background:var(--v);color:#fff}
+.ltag{font-size:.66rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--tc);padding:3px 9px;border-radius:9px;display:inline-block;margin-bottom:10px}
+.pk{font-size:.71rem;color:var(--cm);margin-top:10px;line-height:1.6;background:#F5FBF7;border-radius:7px;padding:8px 11px;border-left:3px solid var(--vc)}
+.lctrl{display:flex;gap:7px;margin-top:10px;flex-wrap:wrap}
+.frase-card{background:var(--br);border-radius:11px;padding:14px;border:1px solid #EDE8E0;margin-bottom:8px;box-shadow:0 1px 5px var(--sh)}
+.frase-it{font-family:'Playfair Display',serif;font-size:.94rem;color:var(--v);margin-bottom:3px}
+.frase-pt{font-size:.77rem;color:var(--cm);margin-bottom:6px}
+.frase-dica{font-size:.69rem;color:var(--tc);background:#FEF0E8;padding:5px 9px;border-radius:7px;font-style:italic;margin-bottom:6px}
+.situacao-badge{font-size:.61rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--do);margin-bottom:8px}
+.audio-bar{display:flex;align-items:center;gap:7px;margin-top:6px;padding:5px 11px;background:#F0FAF4;border-radius:9px;border:1px solid #C8E6D4}
+.audio-label{font-size:.69rem;color:var(--v);font-weight:600}
+.audio-text-preview{font-size:.67rem;color:var(--cm);font-style:italic;flex:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.qprog{display:flex;align-items:center;gap:9px;margin-bottom:16px}
+.pbar{flex:1;height:5px;background:#E8E3DB;border-radius:9px;overflow:hidden}
+.pfill{height:100%;background:linear-gradient(90deg,var(--v),var(--vc));border-radius:9px;transition:width .4s ease}
+.plbl{font-size:.71rem;color:var(--cm);min-width:38px;text-align:right}
+.qcard{background:var(--br);border-radius:14px;padding:20px 16px;border:1px solid #EDE8E0;box-shadow:0 3px 13px var(--sh);text-align:center;margin-bottom:13px}
+.qtipo{font-size:.64rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--cm);margin-bottom:6px}
+.qperg{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--v);margin-bottom:5px}
+.qctx{font-size:.74rem;color:var(--cm);font-style:italic;margin-bottom:18px}
+.opcoes{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.ob{padding:11px 8px;border:2px solid #EDE8E0;border-radius:10px;background:var(--cr);font-size:.8rem;font-family:'Inter',sans-serif;cursor:pointer;transition:all .2s;color:var(--ce);font-weight:500;line-height:1.3}
+.ob:hover:not(:disabled){border-color:var(--vc);background:#F0FAF4}
+.ob.correta{background:#D4EDDA;border-color:#28A745;color:#155724}
+.ob.errada{background:#F8D7DA;border-color:#DC3545;color:#721C24}
+.ob:disabled{cursor:default}
+.qfb{border-radius:11px;padding:12px 14px;margin-bottom:11px;display:none;text-align:left}
+.qfb.show{display:block}.qfb.acerto{background:#D4EDDA;border:1px solid #28A745}
+.qfb.erro{background:#F8D7DA;border:1px solid #DC3545}
+.ftit{font-weight:700;font-size:.84rem;margin-bottom:3px}
+.fexp{font-size:.75rem;color:var(--cm);line-height:1.5}
+.bprox{width:100%;padding:12px;background:var(--v);color:#fff;border:none;border-radius:11px;font-size:.88rem;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;transition:background .2s;display:none}
+.bprox.show{display:block}.bprox:hover{background:#1A4731}
+.res{text-align:center;padding:26px 16px;background:var(--br);border-radius:14px;border:1px solid #EDE8E0;box-shadow:0 3px 13px var(--sh);display:none}
+.res.show{display:block}
+.re{font-size:3rem;margin-bottom:9px}
+.res h2{font-family:'Playfair Display',serif;font-size:1.35rem;color:var(--v);margin-bottom:6px}
+.rpts{font-size:2.2rem;font-weight:700;color:var(--tc);margin:9px 0}
+.res p{font-size:.81rem;color:var(--cm);margin-bottom:16px}
+.brein{padding:10px 24px;background:var(--tc);color:#fff;border:none;border-radius:20px;font-size:.86rem;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif}
+.brein:hover{background:#A0360A}
+</style>
+</head>
+<body>
+<header>
+  <div><h1>Italiano Ogni Giorno</h1><em>Lição 8 — Le professioni</em></div>
+  <div class="tb">⏱ 30 MIN</div>
+</header>
+<nav>
+  <button class="nb active" onclick="showSection('rotina',this)"><span class="ic">📅</span>Rotina</button>
+  <button class="nb" onclick="showSection('vocab',this)"><span class="ic">📖</span>Vocab</button>
+  <button class="nb" onclick="showSection('leitura',this)"><span class="ic">📰</span>Leitura</button>
+  <button class="nb" onclick="showSection('conv',this)"><span class="ic">💬</span>Conv.</button>
+  <button class="nb" onclick="showSection('quiz',this)"><span class="ic">🎯</span>Quiz</button>
+</nav>
+<main>
+<section id="rotina" class="sec active">
+  <div class="rh"><div class="lb">LIÇÃO 8 · CICLO 1</div><h2>Le professioni</h2><p>Profissões, local de trabalho e perguntas sobre carreira</p></div>
+  <div class="bloco"><div class="bi v">📖</div><div><span class="bt">0–8 min</span><h3>Vocabulário</h3><p>Palavras do tema com exemplos e áudio em italiano.</p></div></div>
+  <div class="bloco"><div class="bi t">📰</div><div><span class="bt">8–18 min</span><h3>Leitura</h3><p>Texto situacional. Ouça com 🔊, leia, depois veja a tradução.</p></div></div>
+  <div class="bloco"><div class="bi d">💬</div><div><span class="bt">18–26 min</span><h3>Conversação</h3><p>Frases prontas para usar. Repita cada uma 3 vezes em voz alta.</p></div></div>
+  <div class="bloco"><div class="bi v">🎯</div><div><span class="bt">26–30 min</span><h3>Quiz</h3><p>8 perguntas sobre o conteúdo de hoje. Meta: 6+ acertos!</p></div></div>
+</section>
+<section id="vocab" class="sec">
+  <div style="font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:4px;color:var(--v)">Vocabolario — Lição 8</div>
+  <p style="font-size:.71rem;color:var(--cm);margin-bottom:13px">🔊 Toque para ouvir &bull; Toque no cartão para ver o exemplo</p>
+  <div class="vocab-cat">🏥 Saúde e educação</div><div class="vocab-grid"><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">il medico / l'infermiere</div><div class="vocab-pt">o médico / o enfermeiro</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('il medico / l\'infermiere')">🔊</button></div><div class="vocab-ex">&laquo;Il medico arriva alle nove.&raquo;<br>(O médico chega às nove.)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">l'insegnante / il professore</div><div class="vocab-pt">o/a professor(a)</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('l\'insegnante / il professore')">🔊</button></div><div class="vocab-ex">&laquo;Sono insegnante di matematica.&raquo;<br>(Sou professor de matemática.)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">l'avvocato / l'avvocata</div><div class="vocab-pt">o advogado / a advogada</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('l\'avvocato / l\'avvocata')">🔊</button></div><div class="vocab-ex">&laquo;Mio fratello è avvocato.&raquo;<br>(Meu irmão é advogado.)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">l'architetto / l'ingegnere</div><div class="vocab-pt">o arquiteto / o engenheiro</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('l\'architetto / l\'ingegnere')">🔊</button></div><div class="vocab-ex">&laquo;Lavoro come ingegnere.&raquo;<br>(Trabalho como engenheiro.)</div></div></div><div style="height:10px"></div><div class="vocab-cat">🛒 Comércio e serviços</div><div class="vocab-grid"><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">il commesso / la commessa</div><div class="vocab-pt">o vendedor / a vendedora</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('il commesso / la commessa')">🔊</button></div><div class="vocab-ex">&laquo;La commessa è gentile.&raquo;<br>(A vendedora é gentil.)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">il cuoco / lo chef</div><div class="vocab-pt">o cozinheiro / o chef</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('il cuoco / lo chef')">🔊</button></div><div class="vocab-ex">&laquo;Lo chef prepara piatti speciali.&raquo;<br>(O chef prepara pratos especiais.)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">il cameriere / la cameriera</div><div class="vocab-pt">o garçom / a garçonete</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('il cameriere / la cameriera')">🔊</button></div><div class="vocab-ex">&laquo;Il cameriere porta il conto.&raquo;<br>(O garçom traz a conta.)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">il meccanico / l'elettricista</div><div class="vocab-pt">o mecânico / o eletricista</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('il meccanico / l\'elettricista')">🔊</button></div><div class="vocab-ex">&laquo;Ho bisogno di un meccanico.&raquo;<br>(Preciso de um mecânico.)</div></div></div><div style="height:10px"></div><div class="vocab-cat">💻 Trabalho moderno</div><div class="vocab-grid"><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">il/la manager</div><div class="vocab-pt">o/a gerente</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('il/la manager')">🔊</button></div><div class="vocab-ex">&laquo;Sono manager in un'azienda.&raquo;<br>(Sou gerente em uma empresa.)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">il programmatore</div><div class="vocab-pt">o programador</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('il programmatore')">🔊</button></div><div class="vocab-ex">&laquo;Lavoro come programmatore.&raquo;<br>(Trabalho como programador.)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">lavoro in proprio</div><div class="vocab-pt">trabalho por conta própria</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('lavoro in proprio')">🔊</button></div><div class="vocab-ex">&laquo;Lavoro in proprio da tre anni.&raquo;<br>(Trabalho por conta própria há três anos.)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">il/la freelance</div><div class="vocab-pt">o/a freelancer</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('il/la freelance')">🔊</button></div><div class="vocab-ex">&laquo;Sono freelance nel marketing.&raquo;<br>(Sou freelancer em marketing.)</div></div></div><div style="height:10px"></div>
+</section>
+<section id="leitura" class="sec">
+  <div style="font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:4px;color:var(--v)">Lettura — Lição 8</div>
+  <p style="font-size:.71rem;color:var(--cm);margin-bottom:13px">Leia em italiano &bull; 🔊 para ouvir &bull; Depois veja a tradução</p>
+  <div class="lc">
+    <span class="ltag">💼 Le professioni</span>
+    <div class="li" id="tl">Durante una cena, Roberto incontra nuove persone. «Ciao! Sono Roberto e lavoro come medico in un ospedale pubblico.» «Interessante!» dice Elena. «Io invece sono avvocata, da otto anni. È stressante ma soddisfacente.» Un uomo vicino sorride: «Io faccio il cuoco in un ristorante stellato. La cucina è la mia passione da sempre!» Roberto ride: «Che bel gruppo! Un medico, un'avvocata e uno chef.» Elena aggiunge: «E io pensavo che tutti i cuochi lavorassero solo in tv!» Tutti ridono.</div>
+    <div class="pk">🔎 <b>Palavras-chave:</b> <i>invece</i> (por minha vez) · <i>soddisfacente</i> (gratificante) · <i>stellato</i> (estrelado (Michelin)) · <i>da sempre</i> (desde sempre) · <i>aggiunge</i> (acrescenta)</div>
+    <div class="lctrl">
+      <button class="btn-audio" style="background:#E8F5EE;border:1.5px solid var(--vc);padding:6px 13px;border-radius:18px;font-size:.77rem;font-weight:600;color:var(--v);display:flex;align-items:center;gap:5px" onclick="falarTexto('tl',this)">🔊 Ouvir</button>
+      <button class="btn-audio" style="background:#FEF0E8;border:1.5px solid var(--ts);padding:6px 13px;border-radius:18px;font-size:.77rem;font-weight:600;color:var(--tc);display:flex;align-items:center;gap:5px" onclick="pararAudio()">⏹ Parar</button>
+      <button class="btn-t" onclick="traduzir(this)">👁 Ver tradução</button>
+    </div>
+    <div class="lp">Durante um jantar, Roberto encontra pessoas novas. «Olá! Sou Roberto e trabalho como médico em um hospital público.» «Interessante!» diz Elena. «Eu por minha vez sou advogada, há oito anos. É estressante mas gratificante.» Um homem próximo sorri: «Eu trabalho como cozinheiro em um restaurante estrelado. A culinária é minha paixão desde sempre!» Roberto ri: «Que belo grupo! Um médico, uma advogada e um chef.» Elena acrescenta: «E eu achava que todos os cozinheiros só trabalhavam na TV!» Todos riem.</div>
+  </div>
+</section>
+<section id="conv" class="sec">
+  <div style="font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:4px;color:var(--v)">Conversazione — Lição 8</div>
+  <p style="font-size:.71rem;color:var(--cm);margin-bottom:13px">▶ para ouvir &bull; Repita em voz alta 3 vezes cada frase</p>
+  <div class="frase-card"><div class="situacao-badge">💼 PROFISSÃO</div><div class="frase-it">Cosa fai di lavoro? Sono farmacista.</div><div class="frase-pt">O que você faz? Sou farmacêutico.</div><div class="frase-dica">💡 Profissões sem artigo: 'Sono medico', 'Sono avvocata'. Com adjetivo: 'Sono un bravo medico'.</div><div class="audio-bar"><span class="audio-label">🔊</span><span class="audio-text-preview">Cosa fai di lavoro? Sono farmacista.</span><button class="btn-audio" onclick="falar('Cosa fai di lavoro? Sono farmacista.')">&#9654;</button></div></div><div class="frase-card"><div class="situacao-badge">🏢 LOCAL</div><div class="frase-it">Lavoro in un ospedale, nel reparto chirurgia.</div><div class="frase-pt">Trabalho em um hospital, no departamento de cirurgia.</div><div class="frase-dica">💡 'Lavoro in + local': 'in ufficio', 'in una scuola'. 'In proprio' = por conta própria.</div><div class="audio-bar"><span class="audio-label">🔊</span><span class="audio-text-preview">Lavoro in un ospedale, nel reparto chirurgia.</span><button class="btn-audio" onclick="falar('Lavoro in un ospedale, nel reparto chirurgia.')">&#9654;</button></div></div><div class="frase-card"><div class="situacao-badge">⏱ TEMPO</div><div class="frase-it">Da quanto tempo fai questo? Da cinque anni.</div><div class="frase-pt">Há quanto tempo faz isso? Há cinco anos.</div><div class="frase-dica">💡 'Da quanto tempo?' = há quanto tempo? 'Da + período + presente' = há X tempo (e continua).</div><div class="audio-bar"><span class="audio-label">🔊</span><span class="audio-text-preview">Da quanto tempo fai questo? Da cinque anni.</span><button class="btn-audio" onclick="falar('Da quanto tempo fai questo? Da cinque anni.')">&#9654;</button></div></div><div class="frase-card"><div class="situacao-badge">😊 GOSTAR</div><div class="frase-it">Ti piace il tuo lavoro? Sì, molto!</div><div class="frase-pt">Você gosta do seu trabalho? Sim, muito!</div><div class="frase-dica">💡 'Ti piace' = você gosta (informal). 'Le piace?' = formal. 'Mi piace molto' = gosto muito.</div><div class="audio-bar"><span class="audio-label">🔊</span><span class="audio-text-preview">Ti piace il tuo lavoro? Sì, molto!</span><button class="btn-audio" onclick="falar('Ti piace il tuo lavoro? Sì, molto!')">&#9654;</button></div></div>
+</section>
+<section id="quiz" class="sec">
+  <div style="font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:4px;color:var(--v)">Quiz — Lição 8</div>
+  <p style="font-size:.71rem;color:var(--cm);margin-bottom:13px">8 perguntas sobre o conteúdo de hoje</p>
+  <div id="qa">
+    <div class="qprog"><div class="pbar"><div class="pfill" id="pfill" style="width:0%"></div></div><div class="plbl" id="plbl">0 / 8</div></div>
+    <div class="qcard">
+      <div class="qtipo" id="qtipo"></div>
+      <div class="qperg" id="qperg"></div>
+      <div style="display:flex;justify-content:center;margin:4px 0 2px">
+        <button class="btn-audio" id="qaudio" onclick="falarPergunta()" style="background:#E8F5EE;border:1px solid var(--vc);padding:4px 12px;border-radius:13px;font-size:.71rem;color:var(--v);font-weight:600">🔊 Ouvir</button>
+      </div>
+      <div class="qctx" id="qctx"></div>
+      <div class="opcoes" id="qopc"></div>
+    </div>
+    <div class="qfb" id="qfb"><div class="ftit" id="ftit"></div><div class="fexp" id="fexp"></div></div>
+    <button class="bprox" id="bprox" onclick="proxPergunta()">Próxima →</button>
+  </div>
+  <div class="res" id="res">
+    <div class="re" id="re"></div>
+    <h2 id="rtit"></h2>
+    <div class="rpts" id="rpts"></div>
+    <p id="rmsg"></p>
+    <button class="brein" onclick="iniciarQuiz()">🔄 Tentar novamente</button>
+  </div>
+</section>
+</main>
+<script>
+function showSection(id,btn){document.querySelectorAll('.sec').forEach(s=>s.classList.remove('active'));document.querySelectorAll('.nb').forEach(b=>b.classList.remove('active'));document.getElementById(id).classList.add('active');btn.classList.add('active');pararAudio();if(id==='quiz')iniciarQuiz();}
+function revelar(el){el.classList.toggle('revelado');}
+function traduzir(btn){const card=btn.closest('.lc');const pt=card.querySelector('.lp');if(!pt)return;pt.classList.toggle('visivel');btn.textContent=pt.classList.contains('visivel')?'🙈 Ocultar':'👁 Ver tradução';}
+function getVozIt(){const v=window.speechSynthesis.getVoices();return v.find(x=>x.lang==='it-IT')||v.find(x=>x.lang.startsWith('it'))||null;}
+function falar(texto,btnEl){if(!window.speechSynthesis)return;pararAudio();const u=new SpeechSynthesisUtterance(texto);u.lang='it-IT';u.rate=0.85;u.pitch=1;const voz=getVozIt();if(voz)u.voice=voz;if(btnEl){btnEl.classList.add('playing');u.onend=()=>btnEl.classList.remove('playing');}window.speechSynthesis.speak(u);}
+function falarTexto(elId,btnEl){falar(document.getElementById(elId).innerText,btnEl);}
+function pararAudio(){if(window.speechSynthesis)window.speechSynthesis.cancel();document.querySelectorAll('.btn-audio').forEach(b=>b.classList.remove('playing'));}
+if(window.speechSynthesis){window.speechSynthesis.onvoiceschanged=()=>getVozIt();getVozIt();}
+const perguntas=[{tipo:"VOCABULÁRIO",pergunta:"il cameriere",contexto:"Quem é \'il cameriere\'?",opcoes:["o cozinheiro", "o garçom", "o gerente", "o caixa"],correta:1,explicacao:"\'Il cameriere\' = o garçom. \'La cameriera\' = a garçonete. \'Il cuoco/chef\' = o cozinheiro."},{tipo:"GRAMÁTICA",pergunta:"Sono ___ (médico).",contexto:"Forma correta:",opcoes:["un medico", "medico", "il medico", "uno medico"],correta:1,explicacao:"Profissões após \'essere\' sem artigo: \'Sono medico\'. Com adjetivo: \'Sono un bravo medico\'."},{tipo:"LEITURA",pergunta:"Onde Roberto trabalha?",contexto:"",opcoes:["Clínica particular", "Hospital público", "Ambulatório", "Hospital privado"],correta:1,explicacao:"No texto: \'lavoro come medico in un ospedale pubblico\' — Roberto trabalha em um hospital público."},{tipo:"TRADUÇÃO",pergunta:"Lavoro in proprio.",contexto:"O que significa?",opcoes:["Trabalho muito.", "Trabalho em casa.", "Trabalho por conta própria.", "Trabalho com propriedade."],correta:2,explicacao:"\'Lavoro in proprio\' = trabalho por conta própria, sou autônomo. \'Lavoro da casa\' = home office."},{tipo:"VOCABULÁRIO",pergunta:"l\'avvocata",contexto:"É o feminino de \'avvocato\'?",opcoes:["Sim, mais usado hoje", "Não existe", "Só antiquado", "É errado"],correta:0,explicacao:"\'Avvocata\' é o feminino moderno e mais aceito. \'Avvocatessa\' existe mas é antiquado."},{tipo:"CONVERSAÇÃO",pergunta:"Como perguntar a profissão de alguém?",contexto:"",opcoes:["Qual è il tuo lavoro?", "Cosa fai di lavoro?", "Dove lavori?", "Hai un lavoro?"],correta:1,explicacao:"\'Cosa fai di lavoro?\' = O que você faz de trabalho? A mais natural. \'Che lavoro fai?\' também é comum."},{tipo:"TRADUÇÃO",pergunta:"Da otto anni faccio l\'avvocata.",contexto:"Tradução correta?",opcoes:["Há oito anos fui advogada.", "Há oito anos sou advogada.", "Em oito anos serei advogada.", "Fui advogada por oito anos."],correta:1,explicacao:"\'Da + tempo + presente\' = há X tempo (e continua). \'Da otto anni\' = há oito anos (ainda exerce)."},{tipo:"VOCABULÁRIO",pergunta:"il programmatore",contexto:"O que faz este profissional?",opcoes:["programa televisão", "programa computadores", "programa eventos", "é gerente"],correta:1,explicacao:"\'Il programmatore\' = o programador (de software/sistemas). \'L\'informatico\' = profissional de TI em geral."},];
+let atual=0,pontos=0,respondeu=false;
+function iniciarQuiz(){atual=0;pontos=0;respondeu=false;document.getElementById('res').classList.remove('show');document.getElementById('qa').style.display='block';renderPergunta();}
+function renderPergunta(){const q=perguntas[atual];document.getElementById('qtipo').textContent=q.tipo;document.getElementById('qperg').textContent=q.pergunta;document.getElementById('qctx').textContent=q.contexto;const el=document.getElementById('qopc');el.innerHTML='';q.opcoes.forEach((op,i)=>{const btn=document.createElement('button');btn.className='ob';btn.textContent=op;btn.onclick=()=>responder(i);el.appendChild(btn);});document.getElementById('qfb').classList.remove('show','acerto','erro');document.getElementById('bprox').classList.remove('show');respondeu=false;document.getElementById('pfill').style.width=(atual/perguntas.length*100)+'%';document.getElementById('plbl').textContent=atual+' / '+perguntas.length;}
+function falarPergunta(){falar(perguntas[atual].pergunta,document.getElementById('qaudio'));}
+function responder(idx){if(respondeu)return;respondeu=true;const q=perguntas[atual];const btns=document.querySelectorAll('.ob');btns.forEach(b=>b.disabled=true);const fb=document.getElementById('qfb');if(idx===q.correta){btns[idx].classList.add('correta');pontos++;fb.classList.add('show','acerto');document.getElementById('ftit').textContent='✅ Corretto! Molto bene!';}else{btns[idx].classList.add('errada');btns[q.correta].classList.add('correta');fb.classList.add('show','erro');document.getElementById('ftit').textContent='❌ Non è giusto...';}document.getElementById('fexp').textContent=q.explicacao;const bp=document.getElementById('bprox');bp.classList.add('show');bp.textContent=atual<perguntas.length-1?'Próxima →':'Ver resultado';}
+function proxPergunta(){atual++;if(atual>=perguntas.length)mostrarResultado();else renderPergunta();}
+function mostrarResultado(){document.getElementById('qa').style.display='none';document.getElementById('res').classList.add('show');document.getElementById('rpts').textContent=pontos+' / '+perguntas.length;let em,tt,ms;if(pontos===8){em='🏆';tt='Perfetto!';ms='Você dominou o conteúdo de hoje. Bravissimo!';}else if(pontos>=6){em='🌟';tt='Molto bene!';ms='Ótimo resultado! Continue assim.';}else if(pontos>=4){em='👍';tt='Buono!';ms='Revise o vocabulário e tente novamente.';}else{em='📚';tt='Continua così!';ms='Releia o texto e revise antes de tentar novamente.';}document.getElementById('re').textContent=em;document.getElementById('rtit').textContent=tt;document.getElementById('rmsg').textContent=ms;document.getElementById('pfill').style.width='100%';document.getElementById('plbl').textContent=perguntas.length+' / '+perguntas.length;}
+iniciarQuiz();
+</script>
+</body>
+</html>

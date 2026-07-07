@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Italiano Ogni Giorno — Lição 6: Colori e taglie</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--v:#2D6A4F;--vc:#52B788;--cr:#FAF7F2;--tc:#C1440E;--ts:#F4A97E;--do:#D4A017;--ce:#1C1C1E;--cm:#6B6B6B;--br:#FFFFFF;--sh:rgba(44,44,44,.10)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--cr);font-family:'Inter',sans-serif;color:var(--ce);min-height:100vh}
+header{background:var(--v);padding:16px 20px 12px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px var(--sh)}
+header h1{font-family:'Playfair Display',serif;color:#FAF7F2;font-size:1.2rem}
+header em{font-family:'Playfair Display',serif;font-style:italic;color:#F4A97E;font-size:.8rem}
+.tb{background:var(--tc);color:#fff;font-size:.76rem;font-weight:600;padding:4px 11px;border-radius:20px}
+nav{display:flex;background:var(--br);border-bottom:2px solid #E8E3DB;overflow-x:auto;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+.nb{flex:1;min-width:78px;padding:10px 6px 8px;background:none;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-size:.67rem;font-weight:500;color:var(--cm);letter-spacing:.04em;text-transform:uppercase;border-bottom:3px solid transparent;transition:all .2s;display:flex;flex-direction:column;align-items:center;gap:3px}
+.nb .ic{font-size:.98rem}.nb.active{color:var(--v);border-bottom-color:var(--v);background:#F0FAF4}
+main{padding:18px 15px 80px;max-width:600px;margin:0 auto}
+.sec{display:none}.sec.active{display:block}
+.rh{background:linear-gradient(135deg,var(--v),#1A4731);border-radius:13px;padding:20px;margin-bottom:14px;color:#fff;position:relative;overflow:hidden}
+.rh::after{content:'🎨';position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:2.8rem;opacity:.2}
+.rh h2{font-family:'Playfair Display',serif;font-size:1.2rem;margin-bottom:3px}
+.rh p{font-size:.78rem;opacity:.85}
+.lb{display:inline-block;background:var(--do);color:#fff;font-size:.67rem;font-weight:700;padding:2px 9px;border-radius:20px;letter-spacing:.06em;margin-bottom:7px}
+.bloco{display:flex;gap:12px;align-items:flex-start;padding:13px 15px;background:var(--br);border-radius:11px;margin-bottom:8px;border:1px solid #EDE8E0;box-shadow:0 1px 5px var(--sh)}
+.bi{width:40px;height:40px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.bi.v{background:#E8F5EE}.bi.t{background:#FEF0E8}.bi.d{background:#FDF6E3}
+.bt{font-size:.67rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--v);background:#E8F5EE;padding:2px 7px;border-radius:9px;margin-bottom:3px;display:inline-block}
+.bloco h3{font-size:.88rem;font-weight:600;margin-bottom:3px}.bloco p{font-size:.75rem;color:var(--cm);line-height:1.5}
+.vocab-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:4px}
+.vocab-card{background:var(--br);border:1px solid #EDE8E0;border-radius:10px;padding:11px 10px;transition:all .2s;box-shadow:0 1px 4px var(--sh);cursor:pointer}
+.vocab-card:hover{transform:translateY(-2px)}
+.vocab-it{font-family:'Playfair Display',serif;font-size:.97rem;color:var(--v);margin-bottom:1px}
+.vocab-pt{font-size:.74rem;color:var(--cm)}
+.vocab-ex{font-size:.69rem;color:var(--tc);font-style:italic;margin-top:5px;display:none;line-height:1.4}
+.vocab-card.revelado .vocab-ex{display:block}.vocab-card.revelado{border-color:var(--vc);background:#F5FBF7}
+.vocab-cat{font-size:.62rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--do);margin-bottom:6px;margin-top:4px}
+.vocab-actions{display:flex;gap:4px;margin-top:6px}
+.btn-audio{background:none;border:none;cursor:pointer;font-size:.92rem;padding:2px 4px;border-radius:5px;transition:all .15s;display:inline-flex;align-items:center}
+.btn-audio:hover{background:#E8F5EE;transform:scale(1.15)}
+.btn-audio.playing{animation:pulse .6s infinite alternate}
+@keyframes pulse{from{opacity:1}to{opacity:.35}}
+.lc{background:var(--br);border-radius:13px;padding:18px;border:1px solid #EDE8E0;box-shadow:0 2px 9px var(--sh);margin-bottom:13px}
+.li{font-family:'Playfair Display',serif;font-size:.94rem;line-height:1.85;color:var(--ce);margin-bottom:11px;padding-bottom:11px;border-bottom:1px dashed #DDD}
+.lp{font-size:.79rem;color:var(--cm);line-height:1.7;display:none;margin-top:9px}
+.lp.visivel{display:block}
+.btn-t{background:none;border:1.5px solid var(--v);color:var(--v);padding:6px 14px;border-radius:20px;font-size:.75rem;font-weight:600;cursor:pointer;transition:all .2s}
+.btn-t:hover{background:var(--v);color:#fff}
+.ltag{font-size:.66rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--tc);padding:3px 9px;border-radius:9px;display:inline-block;margin-bottom:10px}
+.pk{font-size:.71rem;color:var(--cm);margin-top:10px;line-height:1.6;background:#F5FBF7;border-radius:7px;padding:8px 11px;border-left:3px solid var(--vc)}
+.lctrl{display:flex;gap:7px;margin-top:10px;flex-wrap:wrap}
+.frase-card{background:var(--br);border-radius:11px;padding:14px;border:1px solid #EDE8E0;margin-bottom:8px;box-shadow:0 1px 5px var(--sh)}
+.frase-it{font-family:'Playfair Display',serif;font-size:.94rem;color:var(--v);margin-bottom:3px}
+.frase-pt{font-size:.77rem;color:var(--cm);margin-bottom:6px}
+.frase-dica{font-size:.69rem;color:var(--tc);background:#FEF0E8;padding:5px 9px;border-radius:7px;font-style:italic;margin-bottom:6px}
+.situacao-badge{font-size:.61rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--do);margin-bottom:8px}
+.audio-bar{display:flex;align-items:center;gap:7px;margin-top:6px;padding:5px 11px;background:#F0FAF4;border-radius:9px;border:1px solid #C8E6D4}
+.audio-label{font-size:.69rem;color:var(--v);font-weight:600}
+.audio-text-preview{font-size:.67rem;color:var(--cm);font-style:italic;flex:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.qprog{display:flex;align-items:center;gap:9px;margin-bottom:16px}
+.pbar{flex:1;height:5px;background:#E8E3DB;border-radius:9px;overflow:hidden}
+.pfill{height:100%;background:linear-gradient(90deg,var(--v),var(--vc));border-radius:9px;transition:width .4s ease}
+.plbl{font-size:.71rem;color:var(--cm);min-width:38px;text-align:right}
+.qcard{background:var(--br);border-radius:14px;padding:20px 16px;border:1px solid #EDE8E0;box-shadow:0 3px 13px var(--sh);text-align:center;margin-bottom:13px}
+.qtipo{font-size:.64rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--cm);margin-bottom:6px}
+.qperg{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--v);margin-bottom:5px}
+.qctx{font-size:.74rem;color:var(--cm);font-style:italic;margin-bottom:18px}
+.opcoes{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.ob{padding:11px 8px;border:2px solid #EDE8E0;border-radius:10px;background:var(--cr);font-size:.8rem;font-family:'Inter',sans-serif;cursor:pointer;transition:all .2s;color:var(--ce);font-weight:500;line-height:1.3}
+.ob:hover:not(:disabled){border-color:var(--vc);background:#F0FAF4}
+.ob.correta{background:#D4EDDA;border-color:#28A745;color:#155724}
+.ob.errada{background:#F8D7DA;border-color:#DC3545;color:#721C24}
+.ob:disabled{cursor:default}
+.qfb{border-radius:11px;padding:12px 14px;margin-bottom:11px;display:none;text-align:left}
+.qfb.show{display:block}.qfb.acerto{background:#D4EDDA;border:1px solid #28A745}
+.qfb.erro{background:#F8D7DA;border:1px solid #DC3545}
+.ftit{font-weight:700;font-size:.84rem;margin-bottom:3px}
+.fexp{font-size:.75rem;color:var(--cm);line-height:1.5}
+.bprox{width:100%;padding:12px;background:var(--v);color:#fff;border:none;border-radius:11px;font-size:.88rem;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;transition:background .2s;display:none}
+.bprox.show{display:block}.bprox:hover{background:#1A4731}
+.res{text-align:center;padding:26px 16px;background:var(--br);border-radius:14px;border:1px solid #EDE8E0;box-shadow:0 3px 13px var(--sh);display:none}
+.res.show{display:block}
+.re{font-size:3rem;margin-bottom:9px}
+.res h2{font-family:'Playfair Display',serif;font-size:1.35rem;color:var(--v);margin-bottom:6px}
+.rpts{font-size:2.2rem;font-weight:700;color:var(--tc);margin:9px 0}
+.res p{font-size:.81rem;color:var(--cm);margin-bottom:16px}
+.brein{padding:10px 24px;background:var(--tc);color:#fff;border:none;border-radius:20px;font-size:.86rem;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif}
+.brein:hover{background:#A0360A}
+</style>
+</head>
+<body>
+<header>
+  <div><h1>Italiano Ogni Giorno</h1><em>Lição 6 — Colori e taglie</em></div>
+  <div class="tb">⏱ 30 MIN</div>
+</header>
+<nav>
+  <button class="nb active" onclick="showSection('rotina',this)"><span class="ic">📅</span>Rotina</button>
+  <button class="nb" onclick="showSection('vocab',this)"><span class="ic">📖</span>Vocab</button>
+  <button class="nb" onclick="showSection('leitura',this)"><span class="ic">📰</span>Leitura</button>
+  <button class="nb" onclick="showSection('conv',this)"><span class="ic">💬</span>Conv.</button>
+  <button class="nb" onclick="showSection('quiz',this)"><span class="ic">🎯</span>Quiz</button>
+</nav>
+<main>
+<section id="rotina" class="sec active">
+  <div class="rh"><div class="lb">LIÇÃO 6 · CICLO 1</div><h2>Colori e taglie</h2><p>Cores e tamanhos para comprar roupas numa loja italiana</p></div>
+  <div class="bloco"><div class="bi v">📖</div><div><span class="bt">0–8 min</span><h3>Vocabulário</h3><p>Palavras do tema com exemplos e áudio em italiano.</p></div></div>
+  <div class="bloco"><div class="bi t">📰</div><div><span class="bt">8–18 min</span><h3>Leitura</h3><p>Texto situacional. Ouça com 🔊, leia, depois veja a tradução.</p></div></div>
+  <div class="bloco"><div class="bi d">💬</div><div><span class="bt">18–26 min</span><h3>Conversação</h3><p>Frases prontas para usar. Repita cada uma 3 vezes em voz alta.</p></div></div>
+  <div class="bloco"><div class="bi v">🎯</div><div><span class="bt">26–30 min</span><h3>Quiz</h3><p>8 perguntas sobre o conteúdo de hoje. Meta: 6+ acertos!</p></div></div>
+</section>
+<section id="vocab" class="sec">
+  <div style="font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:4px;color:var(--v)">Vocabolario — Lição 6</div>
+  <p style="font-size:.71rem;color:var(--cm);margin-bottom:13px">🔊 Toque para ouvir &bull; Toque no cartão para ver o exemplo</p>
+  <div class="vocab-cat">🎨 Cores</div><div class="vocab-grid"><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">rosso / rossa</div><div class="vocab-pt">vermelho/a</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('rosso / rossa')">🔊</button></div><div class="vocab-ex">&laquo;Voglio la camicia rossa.&raquo;<br>(Quero a camisa vermelha.)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">blu / azzurro</div><div class="vocab-pt">azul escuro / azul claro</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('blu / azzurro')">🔊</button></div><div class="vocab-ex">&laquo;Ho una borsa blu.&raquo;<br>(Tenho uma bolsa azul.)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">verde / giallo</div><div class="vocab-pt">verde / amarelo</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('verde / giallo')">🔊</button></div><div class="vocab-ex">&laquo;La giacca verde è bellissima.&raquo;<br>(A jaqueta verde é lindíssima.)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">bianco / nero / grigio</div><div class="vocab-pt">branco / preto / cinza</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('bianco / nero / grigio')">🔊</button></div><div class="vocab-ex">&laquo;Preferisco il bianco e nero.&raquo;<br>(Prefiro o preto e branco.)</div></div></div><div style="height:10px"></div><div class="vocab-cat">👕 Roupas e tamanhos</div><div class="vocab-grid"><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">la maglietta / la camicia</div><div class="vocab-pt">a camiseta / a camisa</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('la maglietta / la camicia')">🔊</button></div><div class="vocab-ex">&laquo;Questa maglietta è troppo grande.&raquo;<br>(Esta camiseta é muito grande.)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">i pantaloni / il vestito</div><div class="vocab-pt">a calça / o vestido</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('i pantaloni / il vestito')">🔊</button></div><div class="vocab-ex">&laquo;Questi pantaloni sono stretti.&raquo;<br>(Esta calça está apertada.)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">la taglia</div><div class="vocab-pt">o tamanho (roupa)</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('la taglia')">🔊</button></div><div class="vocab-ex">&laquo;Che taglia porta?&raquo;<br>(Qual tamanho você usa?)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">piccolo / medio / grande</div><div class="vocab-pt">P / M / G</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('piccolo / medio / grande')">🔊</button></div><div class="vocab-ex">&laquo;Porto la taglia media.&raquo;<br>(Uso tamanho médio.)</div></div></div><div style="height:10px"></div><div class="vocab-cat">🔍 Na loja</div><div class="vocab-grid"><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">posso provarlo?</div><div class="vocab-pt">posso experimentar?</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('posso provarlo?')">🔊</button></div><div class="vocab-ex">&laquo;Posso provare questo vestito?&raquo;<br>(Posso experimentar este vestido?)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">mi sta bene</div><div class="vocab-pt">me fica bem</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('mi sta bene')">🔊</button></div><div class="vocab-ex">&laquo;Questa camicia mi sta bene.&raquo;<br>(Esta camisa me fica bem.)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">troppo grande / piccolo</div><div class="vocab-pt">muito grande / pequeno</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('troppo grande / piccolo')">🔊</button></div><div class="vocab-ex">&laquo;È troppo piccolo per me.&raquo;<br>(É muito pequeno para mim.)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">ha qualcosa di più grande?</div><div class="vocab-pt">tem algo maior?</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('ha qualcosa di più grande?')">🔊</button></div><div class="vocab-ex">&laquo;Ce l'avete in blu?&raquo;<br>(Vocês têm em azul?)</div></div></div><div style="height:10px"></div>
+</section>
+<section id="leitura" class="sec">
+  <div style="font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:4px;color:var(--v)">Lettura — Lição 6</div>
+  <p style="font-size:.71rem;color:var(--cm);margin-bottom:13px">Leia em italiano &bull; 🔊 para ouvir &bull; Depois veja a tradução</p>
+  <div class="lc">
+    <span class="ltag">🎨 Colori e taglie</span>
+    <div class="li" id="tl">Elena entra in un negozio di abbigliamento. «Buongiorno! Sto cercando una camicia per mio marito.» «Certo! Di che colore?» «Blu o grigia, preferibilmente.» «Abbiamo questo modello in blu, nelle taglie L e XL.» «Mio marito porta la L. Posso vederla?» La commessa porta la camicia. «È bella! Quanto costa?» «Trenta euro.» «Perfetto, la prendo. Avete anche pantaloni grigi?» «Sì, ma solo nelle taglie S e M.» «Peccato, lui porta la L. Prendo solo la camicia, allora. Grazie!»</div>
+    <div class="pk">🔎 <b>Palavras-chave:</b> <i>sto cercando</i> (estou procurando) · <i>di che colore?</i> (de que cor?) · <i>commessa</i> (vendedora) · <i>peccato</i> (que pena) · <i>la prendo</i> (vou levar)</div>
+    <div class="lctrl">
+      <button class="btn-audio" style="background:#E8F5EE;border:1.5px solid var(--vc);padding:6px 13px;border-radius:18px;font-size:.77rem;font-weight:600;color:var(--v);display:flex;align-items:center;gap:5px" onclick="falarTexto('tl',this)">🔊 Ouvir</button>
+      <button class="btn-audio" style="background:#FEF0E8;border:1.5px solid var(--ts);padding:6px 13px;border-radius:18px;font-size:.77rem;font-weight:600;color:var(--tc);display:flex;align-items:center;gap:5px" onclick="pararAudio()">⏹ Parar</button>
+      <button class="btn-t" onclick="traduzir(this)">👁 Ver tradução</button>
+    </div>
+    <div class="lp">Elena entra em uma loja de roupas. «Bom dia! Estou procurando uma camisa para meu marido.» «Claro! De que cor?» «Azul ou cinza, de preferência.» «Temos este modelo em azul, nos tamanhos G e GG.» «Meu marido usa G. Posso ver?» A vendedora traz a camisa. «É bonita! Quanto custa?» «Trinta euros.» «Perfeito, vou levar. Vocês têm também calças cinzas?» «Sim, mas só nos tamanhos PP e P.» «Que pena, ele usa G. Levo só a camisa então. Obrigada!»</div>
+  </div>
+</section>
+<section id="conv" class="sec">
+  <div style="font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:4px;color:var(--v)">Conversazione — Lição 6</div>
+  <p style="font-size:.71rem;color:var(--cm);margin-bottom:13px">▶ para ouvir &bull; Repita em voz alta 3 vezes cada frase</p>
+  <div class="frase-card"><div class="situacao-badge">🛍 PROCURANDO</div><div class="frase-it">Sto cercando una giacca leggera, taglia M.</div><div class="frase-pt">Estou procurando uma jaqueta leve, tamanho M.</div><div class="frase-dica">💡 'Sto cercando' = estou procurando (gerúndio). Mais natural que 'Voglio cercare'.</div><div class="audio-bar"><span class="audio-label">🔊</span><span class="audio-text-preview">Sto cercando una giacca leggera, taglia M.</span><button class="btn-audio" onclick="falar('Sto cercando una giacca leggera, taglia M.')">&#9654;</button></div></div><div class="frase-card"><div class="situacao-badge">🎨 COR</div><div class="frase-it">Ce l'avete in verde? Preferisco i colori scuri.</div><div class="frase-pt">Vocês têm em verde? Prefiro cores escuras.</div><div class="frase-dica">💡 'Ce l'avete in + cor?' = Vocês têm em + cor? 'Scuro/a' = escuro. 'Chiaro/a' = claro.</div><div class="audio-bar"><span class="audio-label">🔊</span><span class="audio-text-preview">Ce l'avete in verde? Preferisco i colori scuri.</span><button class="btn-audio" onclick="falar('Ce l\'avete in verde? Preferisco i colori scuri.')">&#9654;</button></div></div><div class="frase-card"><div class="situacao-badge">👕 TAMANHO</div><div class="frase-it">Che taglia porta? Porto la media, di solito.</div><div class="frase-pt">Que tamanho você usa? Uso médio, normalmente.</div><div class="frase-dica">💡 'Porta' aqui = você usa. 'Di solito' = normalmente. Tamanhos: XS, S, M(media), L, XL.</div><div class="audio-bar"><span class="audio-label">🔊</span><span class="audio-text-preview">Che taglia porta? Porto la media, di solito.</span><button class="btn-audio" onclick="falar('Che taglia porta? Porto la media, di solito.')">&#9654;</button></div></div><div class="frase-card"><div class="situacao-badge">✅ EXPERIMENTAR</div><div class="frase-it">Posso provare questo? Come mi sta?</div><div class="frase-pt">Posso experimentar isso? Como fica em mim?</div><div class="frase-dica">💡 'Posso provare?' = posso experimentar? 'Come mi sta?' = como fica? 'Mi sta bene' = me fica bem.</div><div class="audio-bar"><span class="audio-label">🔊</span><span class="audio-text-preview">Posso provare questo? Come mi sta?</span><button class="btn-audio" onclick="falar('Posso provare questo? Come mi sta?')">&#9654;</button></div></div>
+</section>
+<section id="quiz" class="sec">
+  <div style="font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:4px;color:var(--v)">Quiz — Lição 6</div>
+  <p style="font-size:.71rem;color:var(--cm);margin-bottom:13px">8 perguntas sobre o conteúdo de hoje</p>
+  <div id="qa">
+    <div class="qprog"><div class="pbar"><div class="pfill" id="pfill" style="width:0%"></div></div><div class="plbl" id="plbl">0 / 8</div></div>
+    <div class="qcard">
+      <div class="qtipo" id="qtipo"></div>
+      <div class="qperg" id="qperg"></div>
+      <div style="display:flex;justify-content:center;margin:4px 0 2px">
+        <button class="btn-audio" id="qaudio" onclick="falarPergunta()" style="background:#E8F5EE;border:1px solid var(--vc);padding:4px 12px;border-radius:13px;font-size:.71rem;color:var(--v);font-weight:600">🔊 Ouvir</button>
+      </div>
+      <div class="qctx" id="qctx"></div>
+      <div class="opcoes" id="qopc"></div>
+    </div>
+    <div class="qfb" id="qfb"><div class="ftit" id="ftit"></div><div class="fexp" id="fexp"></div></div>
+    <button class="bprox" id="bprox" onclick="proxPergunta()">Próxima →</button>
+  </div>
+  <div class="res" id="res">
+    <div class="re" id="re"></div>
+    <h2 id="rtit"></h2>
+    <div class="rpts" id="rpts"></div>
+    <p id="rmsg"></p>
+    <button class="brein" onclick="iniciarQuiz()">🔄 Tentar novamente</button>
+  </div>
+</section>
+</main>
+<script>
+function showSection(id,btn){document.querySelectorAll('.sec').forEach(s=>s.classList.remove('active'));document.querySelectorAll('.nb').forEach(b=>b.classList.remove('active'));document.getElementById(id).classList.add('active');btn.classList.add('active');pararAudio();if(id==='quiz')iniciarQuiz();}
+function revelar(el){el.classList.toggle('revelado');}
+function traduzir(btn){const card=btn.closest('.lc');const pt=card.querySelector('.lp');if(!pt)return;pt.classList.toggle('visivel');btn.textContent=pt.classList.contains('visivel')?'🙈 Ocultar':'👁 Ver tradução';}
+function getVozIt(){const v=window.speechSynthesis.getVoices();return v.find(x=>x.lang==='it-IT')||v.find(x=>x.lang.startsWith('it'))||null;}
+function falar(texto,btnEl){if(!window.speechSynthesis)return;pararAudio();const u=new SpeechSynthesisUtterance(texto);u.lang='it-IT';u.rate=0.85;u.pitch=1;const voz=getVozIt();if(voz)u.voice=voz;if(btnEl){btnEl.classList.add('playing');u.onend=()=>btnEl.classList.remove('playing');}window.speechSynthesis.speak(u);}
+function falarTexto(elId,btnEl){falar(document.getElementById(elId).innerText,btnEl);}
+function pararAudio(){if(window.speechSynthesis)window.speechSynthesis.cancel();document.querySelectorAll('.btn-audio').forEach(b=>b.classList.remove('playing'));}
+if(window.speechSynthesis){window.speechSynthesis.onvoiceschanged=()=>getVozIt();getVozIt();}
+const perguntas=[{tipo:"VOCABULÁRIO",pergunta:"rosso",contexto:"Qual é o feminino de \'rosso\'?",opcoes:["rossi", "rossa", "rosse", "rosso"],correta:1,explicacao:"\'Rosso\' (masc.) → \'Rossa\' (fem.). Regra: -o vira -a no feminino: bianco→bianca, grigio→grigia."},{tipo:"VOCABULÁRIO",pergunta:"la taglia",contexto:"O que significa?",opcoes:["a cor", "o modelo", "o tamanho", "o tecido"],correta:2,explicacao:"\'La taglia\' = o tamanho (roupas). Para sapatos: \'il numero\'. \'Che taglia porta?\' = Que tamanho você usa?"},{tipo:"LEITURA",pergunta:"Qual tamanho o marido de Elena usa?",contexto:"",opcoes:["S", "M", "L", "XL"],correta:2,explicacao:"No texto: \'Mio marito porta la L\' — o marido de Elena usa tamanho L."},{tipo:"TRADUÇÃO",pergunta:"Posso provarlo?",contexto:"O que significa?",opcoes:["Posso pagar?", "Posso experimentar?", "Posso comprar?", "Posso devolver?"],correta:1,explicacao:"\'Posso\' = posso. \'Provare\' = experimentar/tentar. \'Provarlo\' = experimentá-lo. Use no provador."},{tipo:"GRAMÁTICA",pergunta:"Questi pantaloni sono ___ (apertado).",contexto:"Complete:",opcoes:["stretto", "stretti", "strette", "strettissimo"],correta:1,explicacao:"\'Pantaloni\' = masc. plural → adjetivo masc. plural: \'stretti\'. Singular: \'stretto\'(m), \'stretta\'(f)."},{tipo:"CONVERSAÇÃO",pergunta:"Como pedir um tamanho maior?",contexto:"",opcoes:["Voglio più grande.", "Ha qualcosa di più grande?", "Questo è piccolo.", "Più taglia, per favore."],correta:1,explicacao:"\'Ha qualcosa di più grande?\' = Tem algo maior? Também: \'Ce l\'ha nella taglia più grande?\' funciona."},{tipo:"TRADUÇÃO",pergunta:"Mi sta bene.",contexto:"O que significa?",opcoes:["Estou bem.", "Me fica bem.", "Me sinto bem.", "Fico bem aqui."],correta:1,explicacao:"\'Mi sta bene\' = me fica bem (roupa). \'Come mi sta?\' = Como fica? \'Mi sta male\' = não me fica bem."},{tipo:"VOCABULÁRIO",pergunta:"blu",contexto:"Como \'blu\' se comporta no plural?",opcoes:["blui", "blus", "blu", "blues"],correta:2,explicacao:"\'Blu\' é invariável — não muda no feminino nem no plural: \'una camicia blu\', \'due camicie blu\'."},];
+let atual=0,pontos=0,respondeu=false;
+function iniciarQuiz(){atual=0;pontos=0;respondeu=false;document.getElementById('res').classList.remove('show');document.getElementById('qa').style.display='block';renderPergunta();}
+function renderPergunta(){const q=perguntas[atual];document.getElementById('qtipo').textContent=q.tipo;document.getElementById('qperg').textContent=q.pergunta;document.getElementById('qctx').textContent=q.contexto;const el=document.getElementById('qopc');el.innerHTML='';q.opcoes.forEach((op,i)=>{const btn=document.createElement('button');btn.className='ob';btn.textContent=op;btn.onclick=()=>responder(i);el.appendChild(btn);});document.getElementById('qfb').classList.remove('show','acerto','erro');document.getElementById('bprox').classList.remove('show');respondeu=false;document.getElementById('pfill').style.width=(atual/perguntas.length*100)+'%';document.getElementById('plbl').textContent=atual+' / '+perguntas.length;}
+function falarPergunta(){falar(perguntas[atual].pergunta,document.getElementById('qaudio'));}
+function responder(idx){if(respondeu)return;respondeu=true;const q=perguntas[atual];const btns=document.querySelectorAll('.ob');btns.forEach(b=>b.disabled=true);const fb=document.getElementById('qfb');if(idx===q.correta){btns[idx].classList.add('correta');pontos++;fb.classList.add('show','acerto');document.getElementById('ftit').textContent='✅ Corretto! Molto bene!';}else{btns[idx].classList.add('errada');btns[q.correta].classList.add('correta');fb.classList.add('show','erro');document.getElementById('ftit').textContent='❌ Non è giusto...';}document.getElementById('fexp').textContent=q.explicacao;const bp=document.getElementById('bprox');bp.classList.add('show');bp.textContent=atual<perguntas.length-1?'Próxima →':'Ver resultado';}
+function proxPergunta(){atual++;if(atual>=perguntas.length)mostrarResultado();else renderPergunta();}
+function mostrarResultado(){document.getElementById('qa').style.display='none';document.getElementById('res').classList.add('show');document.getElementById('rpts').textContent=pontos+' / '+perguntas.length;let em,tt,ms;if(pontos===8){em='🏆';tt='Perfetto!';ms='Você dominou o conteúdo de hoje. Bravissimo!';}else if(pontos>=6){em='🌟';tt='Molto bene!';ms='Ótimo resultado! Continue assim.';}else if(pontos>=4){em='👍';tt='Buono!';ms='Revise o vocabulário e tente novamente.';}else{em='📚';tt='Continua così!';ms='Releia o texto e revise antes de tentar novamente.';}document.getElementById('re').textContent=em;document.getElementById('rtit').textContent=tt;document.getElementById('rmsg').textContent=ms;document.getElementById('pfill').style.width='100%';document.getElementById('plbl').textContent=perguntas.length+' / '+perguntas.length;}
+iniciarQuiz();
+</script>
+</body>
+</html>

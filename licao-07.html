@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Italiano Ogni Giorno — Lição 7: La famiglia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--v:#2D6A4F;--vc:#52B788;--cr:#FAF7F2;--tc:#C1440E;--ts:#F4A97E;--do:#D4A017;--ce:#1C1C1E;--cm:#6B6B6B;--br:#FFFFFF;--sh:rgba(44,44,44,.10)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--cr);font-family:'Inter',sans-serif;color:var(--ce);min-height:100vh}
+header{background:var(--v);padding:16px 20px 12px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px var(--sh)}
+header h1{font-family:'Playfair Display',serif;color:#FAF7F2;font-size:1.2rem}
+header em{font-family:'Playfair Display',serif;font-style:italic;color:#F4A97E;font-size:.8rem}
+.tb{background:var(--tc);color:#fff;font-size:.76rem;font-weight:600;padding:4px 11px;border-radius:20px}
+nav{display:flex;background:var(--br);border-bottom:2px solid #E8E3DB;overflow-x:auto;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+.nb{flex:1;min-width:78px;padding:10px 6px 8px;background:none;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-size:.67rem;font-weight:500;color:var(--cm);letter-spacing:.04em;text-transform:uppercase;border-bottom:3px solid transparent;transition:all .2s;display:flex;flex-direction:column;align-items:center;gap:3px}
+.nb .ic{font-size:.98rem}.nb.active{color:var(--v);border-bottom-color:var(--v);background:#F0FAF4}
+main{padding:18px 15px 80px;max-width:600px;margin:0 auto}
+.sec{display:none}.sec.active{display:block}
+.rh{background:linear-gradient(135deg,var(--v),#1A4731);border-radius:13px;padding:20px;margin-bottom:14px;color:#fff;position:relative;overflow:hidden}
+.rh::after{content:'👨‍👩‍👧‍👦';position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:2.8rem;opacity:.2}
+.rh h2{font-family:'Playfair Display',serif;font-size:1.2rem;margin-bottom:3px}
+.rh p{font-size:.78rem;opacity:.85}
+.lb{display:inline-block;background:var(--do);color:#fff;font-size:.67rem;font-weight:700;padding:2px 9px;border-radius:20px;letter-spacing:.06em;margin-bottom:7px}
+.bloco{display:flex;gap:12px;align-items:flex-start;padding:13px 15px;background:var(--br);border-radius:11px;margin-bottom:8px;border:1px solid #EDE8E0;box-shadow:0 1px 5px var(--sh)}
+.bi{width:40px;height:40px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.bi.v{background:#E8F5EE}.bi.t{background:#FEF0E8}.bi.d{background:#FDF6E3}
+.bt{font-size:.67rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--v);background:#E8F5EE;padding:2px 7px;border-radius:9px;margin-bottom:3px;display:inline-block}
+.bloco h3{font-size:.88rem;font-weight:600;margin-bottom:3px}.bloco p{font-size:.75rem;color:var(--cm);line-height:1.5}
+.vocab-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:4px}
+.vocab-card{background:var(--br);border:1px solid #EDE8E0;border-radius:10px;padding:11px 10px;transition:all .2s;box-shadow:0 1px 4px var(--sh);cursor:pointer}
+.vocab-card:hover{transform:translateY(-2px)}
+.vocab-it{font-family:'Playfair Display',serif;font-size:.97rem;color:var(--v);margin-bottom:1px}
+.vocab-pt{font-size:.74rem;color:var(--cm)}
+.vocab-ex{font-size:.69rem;color:var(--tc);font-style:italic;margin-top:5px;display:none;line-height:1.4}
+.vocab-card.revelado .vocab-ex{display:block}.vocab-card.revelado{border-color:var(--vc);background:#F5FBF7}
+.vocab-cat{font-size:.62rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--do);margin-bottom:6px;margin-top:4px}
+.vocab-actions{display:flex;gap:4px;margin-top:6px}
+.btn-audio{background:none;border:none;cursor:pointer;font-size:.92rem;padding:2px 4px;border-radius:5px;transition:all .15s;display:inline-flex;align-items:center}
+.btn-audio:hover{background:#E8F5EE;transform:scale(1.15)}
+.btn-audio.playing{animation:pulse .6s infinite alternate}
+@keyframes pulse{from{opacity:1}to{opacity:.35}}
+.lc{background:var(--br);border-radius:13px;padding:18px;border:1px solid #EDE8E0;box-shadow:0 2px 9px var(--sh);margin-bottom:13px}
+.li{font-family:'Playfair Display',serif;font-size:.94rem;line-height:1.85;color:var(--ce);margin-bottom:11px;padding-bottom:11px;border-bottom:1px dashed #DDD}
+.lp{font-size:.79rem;color:var(--cm);line-height:1.7;display:none;margin-top:9px}
+.lp.visivel{display:block}
+.btn-t{background:none;border:1.5px solid var(--v);color:var(--v);padding:6px 14px;border-radius:20px;font-size:.75rem;font-weight:600;cursor:pointer;transition:all .2s}
+.btn-t:hover{background:var(--v);color:#fff}
+.ltag{font-size:.66rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--tc);padding:3px 9px;border-radius:9px;display:inline-block;margin-bottom:10px}
+.pk{font-size:.71rem;color:var(--cm);margin-top:10px;line-height:1.6;background:#F5FBF7;border-radius:7px;padding:8px 11px;border-left:3px solid var(--vc)}
+.lctrl{display:flex;gap:7px;margin-top:10px;flex-wrap:wrap}
+.frase-card{background:var(--br);border-radius:11px;padding:14px;border:1px solid #EDE8E0;margin-bottom:8px;box-shadow:0 1px 5px var(--sh)}
+.frase-it{font-family:'Playfair Display',serif;font-size:.94rem;color:var(--v);margin-bottom:3px}
+.frase-pt{font-size:.77rem;color:var(--cm);margin-bottom:6px}
+.frase-dica{font-size:.69rem;color:var(--tc);background:#FEF0E8;padding:5px 9px;border-radius:7px;font-style:italic;margin-bottom:6px}
+.situacao-badge{font-size:.61rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--do);margin-bottom:8px}
+.audio-bar{display:flex;align-items:center;gap:7px;margin-top:6px;padding:5px 11px;background:#F0FAF4;border-radius:9px;border:1px solid #C8E6D4}
+.audio-label{font-size:.69rem;color:var(--v);font-weight:600}
+.audio-text-preview{font-size:.67rem;color:var(--cm);font-style:italic;flex:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.qprog{display:flex;align-items:center;gap:9px;margin-bottom:16px}
+.pbar{flex:1;height:5px;background:#E8E3DB;border-radius:9px;overflow:hidden}
+.pfill{height:100%;background:linear-gradient(90deg,var(--v),var(--vc));border-radius:9px;transition:width .4s ease}
+.plbl{font-size:.71rem;color:var(--cm);min-width:38px;text-align:right}
+.qcard{background:var(--br);border-radius:14px;padding:20px 16px;border:1px solid #EDE8E0;box-shadow:0 3px 13px var(--sh);text-align:center;margin-bottom:13px}
+.qtipo{font-size:.64rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--cm);margin-bottom:6px}
+.qperg{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--v);margin-bottom:5px}
+.qctx{font-size:.74rem;color:var(--cm);font-style:italic;margin-bottom:18px}
+.opcoes{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.ob{padding:11px 8px;border:2px solid #EDE8E0;border-radius:10px;background:var(--cr);font-size:.8rem;font-family:'Inter',sans-serif;cursor:pointer;transition:all .2s;color:var(--ce);font-weight:500;line-height:1.3}
+.ob:hover:not(:disabled){border-color:var(--vc);background:#F0FAF4}
+.ob.correta{background:#D4EDDA;border-color:#28A745;color:#155724}
+.ob.errada{background:#F8D7DA;border-color:#DC3545;color:#721C24}
+.ob:disabled{cursor:default}
+.qfb{border-radius:11px;padding:12px 14px;margin-bottom:11px;display:none;text-align:left}
+.qfb.show{display:block}.qfb.acerto{background:#D4EDDA;border:1px solid #28A745}
+.qfb.erro{background:#F8D7DA;border:1px solid #DC3545}
+.ftit{font-weight:700;font-size:.84rem;margin-bottom:3px}
+.fexp{font-size:.75rem;color:var(--cm);line-height:1.5}
+.bprox{width:100%;padding:12px;background:var(--v);color:#fff;border:none;border-radius:11px;font-size:.88rem;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;transition:background .2s;display:none}
+.bprox.show{display:block}.bprox:hover{background:#1A4731}
+.res{text-align:center;padding:26px 16px;background:var(--br);border-radius:14px;border:1px solid #EDE8E0;box-shadow:0 3px 13px var(--sh);display:none}
+.res.show{display:block}
+.re{font-size:3rem;margin-bottom:9px}
+.res h2{font-family:'Playfair Display',serif;font-size:1.35rem;color:var(--v);margin-bottom:6px}
+.rpts{font-size:2.2rem;font-weight:700;color:var(--tc);margin:9px 0}
+.res p{font-size:.81rem;color:var(--cm);margin-bottom:16px}
+.brein{padding:10px 24px;background:var(--tc);color:#fff;border:none;border-radius:20px;font-size:.86rem;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif}
+.brein:hover{background:#A0360A}
+</style>
+</head>
+<body>
+<header>
+  <div><h1>Italiano Ogni Giorno</h1><em>Lição 7 — La famiglia</em></div>
+  <div class="tb">⏱ 30 MIN</div>
+</header>
+<nav>
+  <button class="nb active" onclick="showSection('rotina',this)"><span class="ic">📅</span>Rotina</button>
+  <button class="nb" onclick="showSection('vocab',this)"><span class="ic">📖</span>Vocab</button>
+  <button class="nb" onclick="showSection('leitura',this)"><span class="ic">📰</span>Leitura</button>
+  <button class="nb" onclick="showSection('conv',this)"><span class="ic">💬</span>Conv.</button>
+  <button class="nb" onclick="showSection('quiz',this)"><span class="ic">🎯</span>Quiz</button>
+</nav>
+<main>
+<section id="rotina" class="sec active">
+  <div class="rh"><div class="lb">LIÇÃO 7 · CICLO 1</div><h2>La famiglia</h2><p>Membros da família, estado civil e como falar de parentes</p></div>
+  <div class="bloco"><div class="bi v">📖</div><div><span class="bt">0–8 min</span><h3>Vocabulário</h3><p>Palavras do tema com exemplos e áudio em italiano.</p></div></div>
+  <div class="bloco"><div class="bi t">📰</div><div><span class="bt">8–18 min</span><h3>Leitura</h3><p>Texto situacional. Ouça com 🔊, leia, depois veja a tradução.</p></div></div>
+  <div class="bloco"><div class="bi d">💬</div><div><span class="bt">18–26 min</span><h3>Conversação</h3><p>Frases prontas para usar. Repita cada uma 3 vezes em voz alta.</p></div></div>
+  <div class="bloco"><div class="bi v">🎯</div><div><span class="bt">26–30 min</span><h3>Quiz</h3><p>8 perguntas sobre o conteúdo de hoje. Meta: 6+ acertos!</p></div></div>
+</section>
+<section id="vocab" class="sec">
+  <div style="font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:4px;color:var(--v)">Vocabolario — Lição 7</div>
+  <p style="font-size:.71rem;color:var(--cm);margin-bottom:13px">🔊 Toque para ouvir &bull; Toque no cartão para ver o exemplo</p>
+  <div class="vocab-cat">👨‍👩‍👧 Família nuclear</div><div class="vocab-grid"><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">il marito / la moglie</div><div class="vocab-pt">o marido / a esposa</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('il marito / la moglie')">🔊</button></div><div class="vocab-ex">&laquo;Mio marito si chiama Paolo.&raquo;<br>(Meu marido se chama Paolo.)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">il figlio / la figlia</div><div class="vocab-pt">o filho / a filha</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('il figlio / la figlia')">🔊</button></div><div class="vocab-ex">&laquo;Ho due figli, maschio e femmina.&raquo;<br>(Tenho dois filhos, menino e menina.)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">il fratello / la sorella</div><div class="vocab-pt">o irmão / a irmã</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('il fratello / la sorella')">🔊</button></div><div class="vocab-ex">&laquo;Mia sorella abita a Milano.&raquo;<br>(Minha irmã mora em Milão.)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">i genitori</div><div class="vocab-pt">os pais</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('i genitori')">🔊</button></div><div class="vocab-ex">&laquo;I miei genitori abitano in campagna.&raquo;<br>(Meus pais moram no campo.)</div></div></div><div style="height:10px"></div><div class="vocab-cat">👴 Família estendida</div><div class="vocab-grid"><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">il nonno / la nonna</div><div class="vocab-pt">o avô / a avó</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('il nonno / la nonna')">🔊</button></div><div class="vocab-ex">&laquo;I nonni vivono con noi.&raquo;<br>(Os avós moram conosco.)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">lo zio / la zia</div><div class="vocab-pt">o tio / a tia</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('lo zio / la zia')">🔊</button></div><div class="vocab-ex">&laquo;Mio zio è molto simpatico.&raquo;<br>(Meu tio é muito simpático.)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">il cugino / la cugina</div><div class="vocab-pt">o primo / a prima</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('il cugino / la cugina')">🔊</button></div><div class="vocab-ex">&laquo;Ho tanti cugini.&raquo;<br>(Tenho muitos primos.)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">il nipote / la nipote</div><div class="vocab-pt">neto/sobrinho — neta/sobrinha</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('il nipote / la nipote')">🔊</button></div><div class="vocab-ex">&laquo;La mia nipote ha tre anni.&raquo;<br>(Minha neta tem três anos.)</div></div></div><div style="height:10px"></div><div class="vocab-cat">💑 Estado civil</div><div class="vocab-grid"><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">sposato/a</div><div class="vocab-pt">casado/a</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('sposato/a')">🔊</button></div><div class="vocab-ex">&laquo;Sono sposato da dieci anni.&raquo;<br>(Sou casado há dez anos.)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">single / celibe / nubile</div><div class="vocab-pt">solteiro/a</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('single / celibe / nubile')">🔊</button></div><div class="vocab-ex">&laquo;Sono ancora single.&raquo;<br>(Ainda sou solteiro.)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">fidanzato/a</div><div class="vocab-pt">namorado/noivo</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('fidanzato/a')">🔊</button></div><div class="vocab-ex">&laquo;La mia fidanzata si chiama Sara.&raquo;<br>(Minha namorada se chama Sara.)</div></div><div class="vocab-card" onclick="revelar(this)"><div class="vocab-it">divorziato/a</div><div class="vocab-pt">divorciado/a</div><div class="vocab-actions"><button class="btn-audio" onclick="event.stopPropagation();falar('divorziato/a')">🔊</button></div><div class="vocab-ex">&laquo;È divorziata con un figlio.&raquo;<br>(Ela é divorciada com um filho.)</div></div></div><div style="height:10px"></div>
+</section>
+<section id="leitura" class="sec">
+  <div style="font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:4px;color:var(--v)">Lettura — Lição 7</div>
+  <p style="font-size:.71rem;color:var(--cm);margin-bottom:13px">Leia em italiano &bull; 🔊 para ouvir &bull; Depois veja a tradução</p>
+  <div class="lc">
+    <span class="ltag">👨‍👩‍👧‍👦 La famiglia</span>
+    <div class="li" id="tl">Teresa parla della sua famiglia con la sua nuova collega Marta. «Sei sposata, Teresa?» «Sì, sono sposata da quindici anni. Mio marito Giulio è architetto.» «Avete figli?» «Due. Marco ha dodici anni e studia molto. Lucia, la più piccola, ha otto anni e adora ballare.» «Che bello! E i tuoi genitori?» «Mia madre vive con noi. Mio padre è morto tre anni fa. È difficile, ma andiamo avanti.» «Mi dispiace tanto. E tu, Marta?» «Io sono ancora fidanzata. Ci sposiamo l'anno prossimo!» «Congratulazioni!»</div>
+    <div class="pk">🔎 <b>Palavras-chave:</b> <i>la più piccola</i> (a mais nova) · <i>adora ballare</i> (adora dançar) · <i>è morto</i> (faleceu/morreu) · <i>mi dispiace</i> (sinto muito) · <i>ci sposiamo</i> (nos casamos)</div>
+    <div class="lctrl">
+      <button class="btn-audio" style="background:#E8F5EE;border:1.5px solid var(--vc);padding:6px 13px;border-radius:18px;font-size:.77rem;font-weight:600;color:var(--v);display:flex;align-items:center;gap:5px" onclick="falarTexto('tl',this)">🔊 Ouvir</button>
+      <button class="btn-audio" style="background:#FEF0E8;border:1.5px solid var(--ts);padding:6px 13px;border-radius:18px;font-size:.77rem;font-weight:600;color:var(--tc);display:flex;align-items:center;gap:5px" onclick="pararAudio()">⏹ Parar</button>
+      <button class="btn-t" onclick="traduzir(this)">👁 Ver tradução</button>
+    </div>
+    <div class="lp">Teresa fala de sua família com sua nova colega Marta. «Você é casada, Teresa?» «Sim, sou casada há quinze anos. Meu marido Giulio é arquiteto.» «Vocês têm filhos?» «Dois. Marco tem doze anos e estuda muito. Lucia, a mais nova, tem oito anos e adora dançar.» «Que lindo! E seus pais?» «Minha mãe mora conosco. Meu pai faleceu há três anos. É difícil, mas seguimos em frente.» «Sinto muito. E você, Marta?» «Eu ainda estou noiva. Nos casamos no próximo ano!» «Parabéns!»</div>
+  </div>
+</section>
+<section id="conv" class="sec">
+  <div style="font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:4px;color:var(--v)">Conversazione — Lição 7</div>
+  <p style="font-size:.71rem;color:var(--cm);margin-bottom:13px">▶ para ouvir &bull; Repita em voz alta 3 vezes cada frase</p>
+  <div class="frase-card"><div class="situacao-badge">💍 ESTADO CIVIL</div><div class="frase-it">Sei sposato/a? Sì, da cinque anni.</div><div class="frase-pt">Você é casado/a? Sim, há cinco anos.</div><div class="frase-dica">💡 'Sono sposato' (masc.) / 'Sono sposata' (fem.). 'Da + tempo' = há X anos (ação contínua).</div><div class="audio-bar"><span class="audio-label">🔊</span><span class="audio-text-preview">Sei sposato/a? Sì, da cinque anni.</span><button class="btn-audio" onclick="falar('Sei sposato/a? Sì, da cinque anni.')">&#9654;</button></div></div><div class="frase-card"><div class="situacao-badge">👨‍👩‍👧 FILHOS</div><div class="frase-it">Ho due figli: una femmina e un maschio.</div><div class="frase-pt">Tenho dois filhos: uma menina e um menino.</div><div class="frase-dica">💡 'Figli' inclui ambos os sexos. 'Femmina' = menina, 'maschio' = menino. 'Figlio unico' = filho único.</div><div class="audio-bar"><span class="audio-label">🔊</span><span class="audio-text-preview">Ho due figli: una femmina e un maschio.</span><button class="btn-audio" onclick="falar('Ho due figli: una femmina e un maschio.')">&#9654;</button></div></div><div class="frase-card"><div class="situacao-badge">👴 AVÓS</div><div class="frase-it">I miei nonni abitano in campagna, lontano.</div><div class="frase-pt">Meus avós moram no campo, longe.</div><div class="frase-dica">💡 'I miei nonni' = meus avós. Plural com artigo: 'i miei', 'le mie'. Singular sem: 'Mio nonno'.</div><div class="audio-bar"><span class="audio-label">🔊</span><span class="audio-text-preview">I miei nonni abitano in campagna, lontano.</span><button class="btn-audio" onclick="falar('I miei nonni abitano in campagna, lontano.')">&#9654;</button></div></div><div class="frase-card"><div class="situacao-badge">🎉 PARABÉNS</div><div class="frase-it">Congratulazioni! Quando è il matrimonio?</div><div class="frase-pt">Parabéns! Quando é o casamento?</div><div class="frase-dica">💡 'Congratulazioni!' = por conquista/notícia. 'Auguri!' = por aniversário/festa. Não confundir!</div><div class="audio-bar"><span class="audio-label">🔊</span><span class="audio-text-preview">Congratulazioni! Quando è il matrimonio?</span><button class="btn-audio" onclick="falar('Congratulazioni! Quando è il matrimonio?')">&#9654;</button></div></div>
+</section>
+<section id="quiz" class="sec">
+  <div style="font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:4px;color:var(--v)">Quiz — Lição 7</div>
+  <p style="font-size:.71rem;color:var(--cm);margin-bottom:13px">8 perguntas sobre o conteúdo de hoje</p>
+  <div id="qa">
+    <div class="qprog"><div class="pbar"><div class="pfill" id="pfill" style="width:0%"></div></div><div class="plbl" id="plbl">0 / 8</div></div>
+    <div class="qcard">
+      <div class="qtipo" id="qtipo"></div>
+      <div class="qperg" id="qperg"></div>
+      <div style="display:flex;justify-content:center;margin:4px 0 2px">
+        <button class="btn-audio" id="qaudio" onclick="falarPergunta()" style="background:#E8F5EE;border:1px solid var(--vc);padding:4px 12px;border-radius:13px;font-size:.71rem;color:var(--v);font-weight:600">🔊 Ouvir</button>
+      </div>
+      <div class="qctx" id="qctx"></div>
+      <div class="opcoes" id="qopc"></div>
+    </div>
+    <div class="qfb" id="qfb"><div class="ftit" id="ftit"></div><div class="fexp" id="fexp"></div></div>
+    <button class="bprox" id="bprox" onclick="proxPergunta()">Próxima →</button>
+  </div>
+  <div class="res" id="res">
+    <div class="re" id="re"></div>
+    <h2 id="rtit"></h2>
+    <div class="rpts" id="rpts"></div>
+    <p id="rmsg"></p>
+    <button class="brein" onclick="iniciarQuiz()">🔄 Tentar novamente</button>
+  </div>
+</section>
+</main>
+<script>
+function showSection(id,btn){document.querySelectorAll('.sec').forEach(s=>s.classList.remove('active'));document.querySelectorAll('.nb').forEach(b=>b.classList.remove('active'));document.getElementById(id).classList.add('active');btn.classList.add('active');pararAudio();if(id==='quiz')iniciarQuiz();}
+function revelar(el){el.classList.toggle('revelado');}
+function traduzir(btn){const card=btn.closest('.lc');const pt=card.querySelector('.lp');if(!pt)return;pt.classList.toggle('visivel');btn.textContent=pt.classList.contains('visivel')?'🙈 Ocultar':'👁 Ver tradução';}
+function getVozIt(){const v=window.speechSynthesis.getVoices();return v.find(x=>x.lang==='it-IT')||v.find(x=>x.lang.startsWith('it'))||null;}
+function falar(texto,btnEl){if(!window.speechSynthesis)return;pararAudio();const u=new SpeechSynthesisUtterance(texto);u.lang='it-IT';u.rate=0.85;u.pitch=1;const voz=getVozIt();if(voz)u.voice=voz;if(btnEl){btnEl.classList.add('playing');u.onend=()=>btnEl.classList.remove('playing');}window.speechSynthesis.speak(u);}
+function falarTexto(elId,btnEl){falar(document.getElementById(elId).innerText,btnEl);}
+function pararAudio(){if(window.speechSynthesis)window.speechSynthesis.cancel();document.querySelectorAll('.btn-audio').forEach(b=>b.classList.remove('playing'));}
+if(window.speechSynthesis){window.speechSynthesis.onvoiceschanged=()=>getVozIt();getVozIt();}
+const perguntas=[{tipo:"VOCABULÁRIO",pergunta:"i genitori",contexto:"O que significa?",opcoes:["os avós", "os filhos", "os pais", "os parentes"],correta:2,explicacao:"\'I genitori\' = os pais (pai e mãe). \'Il padre\' = o pai. \'La madre\' = a mãe. \'I parenti\' = os parentes."},{tipo:"GRAMÁTICA",pergunta:"Mio marito / ___ moglie",contexto:"Complete:",opcoes:["mia", "mio", "la mia", "il mio"],correta:0,explicacao:"Parentes singulares sem artigo: \'Mio marito\', \'Mia moglie\'. Com adjetivo: \'La mia cara moglie\'."},{tipo:"VOCABULÁRIO",pergunta:"il nipote",contexto:"Quem pode ser \'il nipote\'?",opcoes:["só o neto", "só o sobrinho", "neto ou sobrinho", "primo ou neto"],correta:2,explicacao:"\'Il nipote\' = neto OU sobrinho. \'La nipote\' = neta OU sobrinha. O contexto determina qual."},{tipo:"LEITURA",pergunta:"Quantos anos tem Lucia?",contexto:"",opcoes:["6 anos", "8 anos", "10 anos", "12 anos"],correta:1,explicacao:"No texto: \'Lucia, la più piccola, ha otto anni\' — Lucia tem oito anos e é a filha mais nova."},{tipo:"TRADUÇÃO",pergunta:"Sono sposata da quindici anni.",contexto:"O que significa?",opcoes:["Fui casada por 15 anos.", "Me casei com 15 anos.", "Sou casada há 15 anos.", "Vou me casar em 15 anos."],correta:2,explicacao:"\'Sono sposata\' = sou casada. \'Da + tempo\' = há X (ação contínua). \'Da quindici anni\' = há quinze anos."},{tipo:"VOCABULÁRIO",pergunta:"fidanzato/a",contexto:"O que significa?",opcoes:["casado/a", "divorciado/a", "namorado/noivo", "solteiro/a"],correta:2,explicacao:"\'Fidanzato/a\' = namorado(a) / noivo(a). Contexto indica se é namoro ou noivado formal."},{tipo:"CONVERSAÇÃO",pergunta:"Como dizer \'meu tio é simpático\'?",contexto:"",opcoes:["Il mio zio è simpatico.", "Mio zio è simpatico.", "Mio zio è simpattico.", "Lo zio mio è simpatico."],correta:1,explicacao:"Parentes singulares sem artigo: \'Mio zio\', \'Mia zia\'. Com adjetivo qualificador: \'Il mio caro zio\'."},{tipo:"TRADUÇÃO",pergunta:"Ci sposiamo l\'anno prossimo.",contexto:"Tradução correta?",opcoes:["Nos casamos no ano passado.", "Vamos casar no próximo ano.", "Eles casaram no próximo ano.", "Casamos todo ano."],correta:1,explicacao:"\'Ci sposiamo\' = nos casamos (reflexivo). \'L\'anno prossimo\' = próximo ano. \'L\'anno scorso\' = ano passado."},];
+let atual=0,pontos=0,respondeu=false;
+function iniciarQuiz(){atual=0;pontos=0;respondeu=false;document.getElementById('res').classList.remove('show');document.getElementById('qa').style.display='block';renderPergunta();}
+function renderPergunta(){const q=perguntas[atual];document.getElementById('qtipo').textContent=q.tipo;document.getElementById('qperg').textContent=q.pergunta;document.getElementById('qctx').textContent=q.contexto;const el=document.getElementById('qopc');el.innerHTML='';q.opcoes.forEach((op,i)=>{const btn=document.createElement('button');btn.className='ob';btn.textContent=op;btn.onclick=()=>responder(i);el.appendChild(btn);});document.getElementById('qfb').classList.remove('show','acerto','erro');document.getElementById('bprox').classList.remove('show');respondeu=false;document.getElementById('pfill').style.width=(atual/perguntas.length*100)+'%';document.getElementById('plbl').textContent=atual+' / '+perguntas.length;}
+function falarPergunta(){falar(perguntas[atual].pergunta,document.getElementById('qaudio'));}
+function responder(idx){if(respondeu)return;respondeu=true;const q=perguntas[atual];const btns=document.querySelectorAll('.ob');btns.forEach(b=>b.disabled=true);const fb=document.getElementById('qfb');if(idx===q.correta){btns[idx].classList.add('correta');pontos++;fb.classList.add('show','acerto');document.getElementById('ftit').textContent='✅ Corretto! Molto bene!';}else{btns[idx].classList.add('errada');btns[q.correta].classList.add('correta');fb.classList.add('show','erro');document.getElementById('ftit').textContent='❌ Non è giusto...';}document.getElementById('fexp').textContent=q.explicacao;const bp=document.getElementById('bprox');bp.classList.add('show');bp.textContent=atual<perguntas.length-1?'Próxima →':'Ver resultado';}
+function proxPergunta(){atual++;if(atual>=perguntas.length)mostrarResultado();else renderPergunta();}
+function mostrarResultado(){document.getElementById('qa').style.display='none';document.getElementById('res').classList.add('show');document.getElementById('rpts').textContent=pontos+' / '+perguntas.length;let em,tt,ms;if(pontos===8){em='🏆';tt='Perfetto!';ms='Você dominou o conteúdo de hoje. Bravissimo!';}else if(pontos>=6){em='🌟';tt='Molto bene!';ms='Ótimo resultado! Continue assim.';}else if(pontos>=4){em='👍';tt='Buono!';ms='Revise o vocabulário e tente novamente.';}else{em='📚';tt='Continua così!';ms='Releia o texto e revise antes de tentar novamente.';}document.getElementById('re').textContent=em;document.getElementById('rtit').textContent=tt;document.getElementById('rmsg').textContent=ms;document.getElementById('pfill').style.width='100%';document.getElementById('plbl').textContent=perguntas.length+' / '+perguntas.length;}
+iniciarQuiz();
+</script>
+</body>
+</html>
